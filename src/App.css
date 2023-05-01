@@ -1,38 +1,74 @@
-.App {
-  text-align: center;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-image: url('./images/background2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cityName{
+  color:rgb(23, 50, 99);
+  font-size: 50px;
+  margin-left: 100px;
+  margin-top: 70px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.icon{
+  width: 150px;
+  height: 150px;
+}
+.today{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content:end;
+  margin-right: 500px;
+}
+.todayTemp{
   color: white;
+  font-size: 50px;
+  display: flex;
+  flex-direction: row;
 }
-
-.App-link {
-  color: #61dafb;
+.header{
+  display: flex;
+  margin: 70px auto 0;
+  background-color: rgb(244, 247, 251);
+  width: 50%;
+  justify-content: space-between;
+  margin: 70px ;
+  padding: 10px;
+  border-radius: 50px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.today{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 100px;
+}
+.searchIcon{
+  font-size: 20px;
+  color: rgb(69, 92, 135);
+  
+}
+.searchInput {
+  
+   background-color: rgb(244, 247, 251);
+   border-style: none;
+   margin-left: 5px;
+}
+.searchClose{
+  margin-left: auto;
+  font-size: 25px;
+}
+.entry{
+  display:flex;
+justify-content: center;
+align-items: center;
+margin-top: 100px;
+color: white;
+font-size: 20px;
+}
+.todayInfo{
+  color:white;
+  display: flex;
+  margin-top: 65px ;
+  font-size: 20px;
 }
